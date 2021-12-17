@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            table{
+                border: 1px solid black;
+            }
+            th,td{
+                padding:3px;
+                margin:1px;
+                border: 1px;
+                border: 1px solid black;
+                align-items: center;
+            }
+            th{
+                background-color: aqua;
+                color: black;
+            }
+            tr{
+                border: 1px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Table Demo</h1>
+
+        
+        <table >
+            <caption>Students</caption>
+            <colgroup>
+                <col span="2" style="background-color: blueviolet;">
+                <col span="3" style="background-color: yellow">
+
+            </colgroup>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr >
+                <td>1</td>
+                <td>Rutuja</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Meenal</td>
+                <td>22</td>
+            </tr>
+            <tfoot>
+                <td>value</td>
+            </tfoot>
+        </table>
+
+        <hr>
+        <h3>Html Table colsspan</h3>
+        <table >
+            <thead>
+                <td colspan="2">Name</td>
+                <td>Phone No</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rahul</td>
+                    <td>Sharma</td>
+                    <td rowspan="3">234882279</td>
+                </tr>
+                <tr>
+                    <td>Arvind</td>
+                    <td>Jadhav</td>
+                    <!-- <td>3628635688</td> -->
+                </tr>
+
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table >
+            <thead>
+                <td>ID</td>
+                <td colspan="2" >Name</td>
+                <td>Phone No</td>
+                <td>Age</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2" colspan="2">Rahul Pathare</td>
+
+                    <td >234882279</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    
+                    <td>3628635688</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Meenal</td>
+                    <td>vanave</td>
+                    <td>3628635688</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ovi</td>
+                    <td>deshmukh</td>
+                    <td>3628635688</td>
+                    <td>22</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
